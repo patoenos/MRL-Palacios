@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="imagenes/Escudo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Inscripciones MRL</title>
+</head>
+<body>    
+</body>
+<div class="contenedor-wrapper-inscripciones">
+    <header class="header">
+        <img width="400px" class="header-img" src="imagenes/chica.png" alt="chica"/>          
+    </header>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="divisiones.html">Divisiones</a></li>       
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+        </ul>
+    </nav> 
+    <div class="texto-inscripciones">
+        <h2>Inscripcion a la Liga Virtual</h2>   
+        <p>Para inscribirte necesitamos tus datos para ponernos en contacto contigo lo más pronto posible. <br>Por favor, llena el formulario para poder buscarte.</p>
+    </div>
+    <form class="formulario-inscripciones">
+        <h2>Formulario</h2>
+        <input type="text" class ="input-nombre" name="nombre" id="nombre" autocomplete="off" maxlength="17" placeholder=" "/>
+        <label for="nombre" class="etiqueta-nombre">Nombre</label>  
+        <input type="text" class ="input-apellido" name="apellido" id="apellido" autocomplete="off" maxlength="17" placeholder=" "/>
+        <label for="apellido" class="etiqueta-apellido">Apellido</label>         
+        <input type="text" class="input-gt" name="gt" id="gt" autocomplete="off" maxlength="17" placeholder=" "/>
+        <label for="gt"class="etiqueta-gt">GamerTag (XBox One)</label>                      
+        <div class="texto2-inscripciones">Division a la que quieres entrar:</div>            
+        <!-- RADIO BUTTONS  -->
+        <label for="radio1" class="etiqueta-elite">ELITE</label>  
+        <input type="radio" class="input-elite" name="division" id="radio1" value="elite" >            
+
+        <label for="radio2" class="etiqueta-clasea" id="division">CLASE A</label>  
+        <input type="radio" class="input-clasea" name="division" id="radio2" value="clasea">                        
+
+
+        <input type="text" class="input-telefono" name="telefono" id="telefono" autocomplete="off" maxlength="15" placeholder=" "/>
+        <label for="telefono" class="etiqueta-telefono">Numero Whatsapp</label>
+        <div class="boton-inscripciones" >
+            <input class="boton-inscripciones" id="boton-ins" type="button" value="Enviar"/>
+        </div>      
+    </form>       
+    <section class="inscripciones-contacto">
+        <h2>Contacto</h2>
+        <h3>Mesa Directiva</h3>
+        <ul>
+            <li>Antonio Palacios</li>
+            <li>Alejandro Mendoza</li>
+            <li>Daniel Arrieta</li>
+        </ul>
+        <h4>Cualquier asunto relacionado con la estructura de la liga favor de escribirnos a <a href="">mrl.mesadirectiva@gmail.com</a></h4>
+    </section>  
+    <footer class="footer-page2">
+        <section>
+        <p>
+            <h4>¿Quieres correr con nosotros? Haz clic <a href="inscripciones.html">aquí</a></h4>
+        </p>
+        </section>        
+        <section class="bloques">          
+            <ul class="bloque1">
+                <li><a href="">Acerca de</a></li>
+                <li><a href="">Soporte</a></li>
+                <li><a href="">Patrocinios</a></li>
+            </ul>
+            <ul class="bloque2">
+                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="">Términos y Condiciones</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+            </ul>
+            <ul class="bloque3">
+                <li><a href="">Unete a Nuestro Equipo</a></li>
+                <li><a href="">Reglamento 2021</a></li>
+                <li><a href="">DISCORD</a></li>
+            </ul>
+        </section>        
+    </footer> 
+</div>
+</html>
