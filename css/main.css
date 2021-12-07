@@ -45,18 +45,19 @@ nav{
     font-size: 1.3rem;  
     text-align: center;  
 }
-
 .navegacion ul{
    /*  border: solid 2px greenyellow;     */
-    list-style-type: none;    
-    
+    list-style-type: none;   
 }
 .navegacion ul li{
     /* border: solid 2px pink;    */
     display: inline-block;   
     padding: 0 3rem 0 3rem;         
 }
-/* ---------------- */
+.navegacion ul li a:hover{ 
+    border-bottom: 5px solid red;
+    /* color: orange; */
+}
 a{
     text-decoration: none;
     color: #9df175;
@@ -372,7 +373,20 @@ footer h4{
     cursor: text;     
     transition: all 0.5s ease;   
 }
-/* --------------- */
+/* si esta en focus, afecta a la etiqueta, ademas, si no hay un placeholder (significa que hay texto adentro) y si tampoco está focus con contenido adentro
+ejecuta el codigo */
+.input-nombre:focus ~ .etiqueta-nombre,
+.input-nombre:not(:placeholder-shown).input-nombre:not(:focus) ~ .etiqueta-nombre{   
+    background-color: #041424;      
+    padding: 0rem 0.5rem 0rem 0rem;
+    margin:0;    
+    color: #9df175;   
+    font-size: 1rem; 
+    top: 2.2rem;    
+}  
+.input-nombre:focus{
+    border: 2px solid #9df175;
+}
 .input-apellido{
     grid-column: 3/5;
     grid-row: 2; 
@@ -394,7 +408,18 @@ footer h4{
     cursor: text;  
     transition: all 0.5s ease;   
 }
-/* ------------------ */
+.input-apellido:focus ~ .etiqueta-apellido,
+.input-apellido:not(:placeholder-shown).input-apellido:not(:focus) ~ .etiqueta-apellido{ 
+    background-color: #041424;
+    padding: 0rem 0.5rem 0rem 0rem;  
+    margin:0;    
+    color: #9df175;   
+    font-size: 1rem; 
+    top: 2.2rem;    
+}  
+.input-apellido:focus{
+    border: 2px solid #9df175;
+}
 .input-gt{    
     grid-column: 5/8;
     grid-row: 2;  
@@ -417,7 +442,18 @@ footer h4{
     cursor: text; 
     transition: all 0.5s ease;      
 }
-/* --------------------------- */
+.input-gt:focus ~ .etiqueta-gt,
+.input-gt:not(:placeholder-shown).input-gt:not(:focus) ~ .etiqueta-gt{ 
+    background-color: #041424;
+    padding: 0rem 0.5rem 0rem 0rem;    
+    margin:0;    
+    color: #9df175;   
+    font-size: 0.9rem; 
+    top: 2.2rem;  
+}  
+.input-gt:focus{
+    border: 2px solid #9df175;
+}
 .texto2-inscripciones{
     grid-column: 1/4;
     grid-row: 4;   
@@ -469,7 +505,18 @@ footer h4{
 #telefono{
     width: 70%;
 }
-/* --------------------------- */
+.input-telefono:focus ~ .etiqueta-telefono,
+.input-telefono:not(:placeholder-shown).input-telefono:not(:focus) ~ .etiqueta-telefono{  
+    background-color: #041424;
+    padding: 0rem 0.5rem 0rem 0rem;      
+    margin:0;    
+    color: #9df175;   
+    font-size: 1rem; 
+    top: 7.7rem;     
+}  
+.input-telefono:focus{
+    border: 2px solid #9df175;
+}
 .boton-inscripciones{
     grid-column: 1/8;
     grid-row: 8;  
