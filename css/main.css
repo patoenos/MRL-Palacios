@@ -364,9 +364,10 @@ footer h4{
     width: 70%;
 }
 .etiqueta-nombre{    
-    position: absolute;
-    top: 3.5rem;
-    left: 0.5rem;
+    width: 60%;  
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
     color: gray;
     padding: 0;    
     background: none;
@@ -378,11 +379,11 @@ ejecuta el codigo */
 .input-nombre:focus ~ .etiqueta-nombre,
 .input-nombre:not(:placeholder-shown).input-nombre:not(:focus) ~ .etiqueta-nombre{   
     background-color: #041424;      
-    padding: 0rem 0.5rem 0rem 0rem;
+    padding: 0rem 0.1rem 0rem 0rem;
     margin:0;    
     color: #9df175;   
     font-size: 1rem; 
-    top: 2.2rem;    
+    transform: translate(0,-1.3rem);  
 }  
 .input-nombre:focus{
     border: 2px solid #9df175;
@@ -396,14 +397,17 @@ ejecuta el codigo */
 }
 #apellido{
     width: 70%;
+   
 }
 .etiqueta-apellido{  
+    grid-column: 3/5;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+   /*  width: 40%; */
     color: gray; 
     padding: 0;    
-    margin:0;
-    position: absolute;
-    top: 3.5rem;
-    left: 22.5rem;
+    margin:0;    
     background: none;           
     cursor: text;  
     transition: all 0.5s ease;   
@@ -411,11 +415,11 @@ ejecuta el codigo */
 .input-apellido:focus ~ .etiqueta-apellido,
 .input-apellido:not(:placeholder-shown).input-apellido:not(:focus) ~ .etiqueta-apellido{ 
     background-color: #041424;
-    padding: 0rem 0.5rem 0rem 0rem;  
+    padding: 0rem 0.5rem 0rem 0.5rem;  
     margin:0;    
     color: #9df175;   
     font-size: 1rem; 
-    top: 2.2rem;    
+    transform: translate(0rem,-1.3rem);  
 }  
 .input-apellido:focus{
     border: 2px solid #9df175;
@@ -435,9 +439,10 @@ ejecuta el codigo */
     padding: 0;
     margin:0;   
     font-size: 0.9rem;
-    position: absolute;
-    top: 3.5rem;
-    left: 44.5rem;
+    grid-column: 5/8;
+    grid-row: 2;
+    justify-self: END;
+    align-self: center;
     background: none;      
     cursor: text; 
     transition: all 0.5s ease;      
@@ -445,11 +450,11 @@ ejecuta el codigo */
 .input-gt:focus ~ .etiqueta-gt,
 .input-gt:not(:placeholder-shown).input-gt:not(:focus) ~ .etiqueta-gt{ 
     background-color: #041424;
-    padding: 0rem 0.5rem 0rem 0rem;    
+    padding: 0rem 0rem 0rem 0.5rem;    
     margin:0;    
     color: #9df175;   
     font-size: 0.9rem; 
-    top: 2.2rem;  
+    transform: translate(0rem,-1.3rem);      
 }  
 .input-gt:focus{
     border: 2px solid #9df175;
@@ -493,9 +498,10 @@ ejecuta el codigo */
 }
 .etiqueta-telefono{
     color: gray;
-    position: absolute;
-    top: 9rem;
-    left: 19rem;
+    grid-column: 3/5;
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
     padding: 0;
     margin:0;
     background: none;          
@@ -508,11 +514,11 @@ ejecuta el codigo */
 .input-telefono:focus ~ .etiqueta-telefono,
 .input-telefono:not(:placeholder-shown).input-telefono:not(:focus) ~ .etiqueta-telefono{  
     background-color: #041424;
-    padding: 0rem 0.5rem 0rem 0rem;      
+    padding: 0rem 0.5rem 0rem 0.5rem;      
     margin:0;    
     color: #9df175;   
     font-size: 1rem; 
-    top: 7.7rem;     
+    transform: translate(0rem,-1.3rem);    
 }  
 .input-telefono:focus{
     border: 2px solid #9df175;
