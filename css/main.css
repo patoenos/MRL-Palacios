@@ -4,8 +4,7 @@
 }
 /************************* 000 GENERAL *************************/
 *{
-     background-color: #041424;      
-    
+    background-color: #041424;       
     border: 0;
     padding: 0;
     margin: 0;
@@ -14,9 +13,9 @@
 }
 .main-wrapper{
     display: grid;
-    height: 250vh;
+    height: 150vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem 2.5rem 20rem 30rem 30rem 20rem auto auto;
+    grid-template-rows: 8rem 2.5rem 20rem 30rem 40rem 20rem auto auto;
     grid-template-areas: 
     "header-area"
     "nav-area"
@@ -300,11 +299,12 @@ footer h4{
 }
 /************************* 001 INSCRIPCIONES WRAPPER *************************/
 .contenedor-wrapper-inscripciones{
+    
     border: 2px solid yellow;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 8rem 2.5rem 10rem 20rem 15rem 10rem ;
+    grid-template-rows: 8rem 2.5rem 10rem 20rem 20rem 10rem ;
     grid-template-areas: 
     "header-area header-area header-area header-area header-area"
     "nav-area nav-area nav-area nav-area nav-area "
@@ -314,7 +314,7 @@ footer h4{
     "footer-area footer-area footer-area footer-area footer-area " 
 }
 .texto-inscripciones{
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     grid-area: texto-area;
     grid-column: 2/4;
@@ -322,7 +322,7 @@ footer h4{
     text-align: center;
     align-self: center;    
 }
-.formulario-inscripciones{    
+.formulario-inscripciones{     
    /*  border: solid 2px red;   */
     box-sizing: border-box;
     position: relative;
@@ -331,16 +331,14 @@ footer h4{
     grid-area: form-area;
     grid-column: 2/4;
     grid-row: 4;
-}
-.formulario-inscripciones /* fieldset */{       
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto 2rem auto auto auto auto auto ; 
+    grid-template-rows: auto auto 2rem auto auto auto 3rem auto ;
 }
 .formulario-inscripciones h2{   
     grid-column: 1/7;
     grid-row: 1;  
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0;
     text-align: center;    
 }
@@ -396,8 +394,7 @@ ejecuta el codigo */
     align-self: center;        
 }
 #apellido{
-    width: 70%;
-   
+    width: 70%;   
 }
 .etiqueta-apellido{  
     grid-column: 3/5;
@@ -460,7 +457,7 @@ ejecuta el codigo */
     border: 2px solid #9df175;
 }
 .texto2-inscripciones{
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 4;   
     justify-self: start;  
     align-self: center;
@@ -478,9 +475,10 @@ ejecuta el codigo */
     align-self: center; 
 }
 .etiqueta-clasea{
-    grid-column: 1/5;
-    grid-row: 6;  
+    grid-column: 1;
+    grid-row: 6 ;  
     align-self: center; 
+    justify-self: start;
 }
 .input-clasea{
     grid-column: 1;
@@ -523,16 +521,15 @@ ejecuta el codigo */
 .input-telefono:focus{
     border: 2px solid #9df175;
 }
-.boton-inscripciones{
-    grid-column: 1/8;
-    grid-row: 8;  
+.boton-inscripciones{    
+    grid-column: 3/5;
+    width: 50%;
+    grid-row: 7; 
+    justify-self: center; 
     text-align: center;    
 }
-#boton-ins{
-    width: 10rem;
-}
 .inscripciones-contacto{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
     grid-area: contacto-area;
     grid-column: 2/4;
