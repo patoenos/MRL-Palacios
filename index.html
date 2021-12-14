@@ -1,244 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link CSS Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Se agrega bootstrapp act -->
-    <!-- Link CSS PROPIO -->
+    <!-- Escudo en pagina -->
+    <link rel="shortcut icon" href="imagenes/Escudo.png">
+    <!-- Link a CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link a CSS Propio -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>MRL</title>
 </head>
-<!-- Se agrega body al main wrapper para insertar el link de JS -->
-<body>    
-<div class="main-wrapper">    
-    <header class="header">
-        <img width="400px" class="header-img" src="imagenes/chica.png" alt="chica"/>          
-    </header>
-    <nav class="navegacion">
-        <ul>
-            <li><a href="divisiones.html">Divisiones</a></li>
-            <li><a href="inscripciones.html">Inscripciones</a></li>
-            <li><a href="agenda.html">Agenda</a></li>
-            <li><a href="resultados.html">Resultados</a></li>
-        </ul>
-    </nav> 
-    <main class="main"> 
-        <h1>LIGA VIRTUAL MRL</h1>
-        <p class="p1">
-            Bienvenido(a) a Mexican Racing League! Una liga donde podrás experimentar ser un corredor en el mundo virtual y llevar la competición al siguiente nivel!
-        </p>
-        <p class="p2">
-            Tu eliges: ser piloto o espectador. Somos una comunidad unida lista para disfrutar la competencia automovilística, desde entrar a ver nuestras transmisiones en vivo
-            hasta poner las manos en tu volante de simulador y estar codo a codo con los mejores!
-        </p>
-    </main>
-    <section class="video">
-        <video class="videoint" src="videos/limp.mp4" controls>Video no pudo reproducirse</video>
-    </section>    
-    <section class="noticias">
-        <h2>Noticias MRL</h2>
-        <!-- <div class="article-noticias">
-            <article class="noticia1">
-                <h3>Piloto del día</h3>
-                <img width="250px" height="250px" src="imagenes/pilotodia.jpg" alt="noticia1"/>
-                <p>
-                    MRL antonioc obtiene el piloto del día tras una demostracion de ritmo constante y aprovechando oportunidades ...
-                </p>
-            </article>
-            <article class="noticia2">
-                <h3>Temporada 6!</h3>
-                <img width="250px" height="250px" src="imagenes/noticia3.jpg" alt="noticia1"/>
-                <p>
-                    En dos semanas estará lista la nueva convocatoria para la temporada #6 de MRL! INSCRIBETE!
-                </p>
-            </article>
-            <article class="noticia3">
-                <h3>Ultima Fecha</h3>
-                <img width="250px" height="250px" src="imagenes/fondo_imola.jpg" alt="noticia1"/>
-                <p>
-                    El 17 de Noviembre se disputará en China la última fecha del calendario MRL T5 para la Division CLASE A!
-                </p>
-            </article>
-            <article class="noticia4">
-                <h3>No esta Definido</h3>
-                <img width="250px" height="250px" src="imagenes/fondo_francia.jpg" alt="noticia1"/>
-                <p>
-                    La pelea de Le M4u y MRL 6JD9 está muy reñida y todo se decidirá en CHINA el 17 de Noviembre CLASE A!
-                </p>
-            </article>       
-        </div> -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators d-flex flex-row align-content-stars">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+<body>
+    <div class="container-fluid">
+        <!-- Logo -->
+        <div class="sticker">
+            <div class="row contenedor-imagen">
+                <div class="col d-flex justify-content-center">
+                    <img src="imagenes/chica.png" alt="">              
+                </div>           
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active d-flex flex-row justify-content-center">
-                <img src="https://dummyimage.com/600x400/000/fff" class="d-block" alt="...">
-                <div class="carousel-caption d-flex flex-column align-self-center ">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+            <!-- NAV -->
+            <div class="row contenedor-fila-nav">
+                <div class="col"> 
+                    <ul class="nav justify-content-center contenedor-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Divisiones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resultados</a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-              <div class="carousel-item" >
-                <img src="https://dummyimage.com/600x400/000/fff" class="d-block " alt="...">
-                <div class="carousel-caption d-none d-md-block d-flex flex-column">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://dummyimage.com/600x400/000/fff" class="d-block " alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://dummyimage.com/600x400/000/fff" class="d-block " alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Fourth slide label</h5>
-                  <p>Some representative placeholder content for the fourth slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-    </section>
-    <section class="calendario">
-        <h2>Calendario</h2>
-        <div class="fechas">
-            <div class="fecha1">
-                <img src="imagenes/banderacanada.jpg" alt="canada"/>
-                <h3>03-Nov</h3>
-                <h3>CANADA</h3>
-            </div>
-            <div class="fecha2">
-                <img src="imagenes/banderachina.jpg" alt="china"/>
-                <h3>10-Nov</h3>
-                <h3>CHINA</h3>
-            </div>
-            <div class="fecha3"> 
-                <img src="imagenes/banderabelgica.jpg" alt="belgica"/>
-                <h3>17-Nov</h3>
-                <h3>SPA</h3>
-            </div>
-            <div class="fecha4"> 
-                <img src="imagenes/banderamexico.jpg" alt="mexico"/>
-                <h3>24-Nov</h3>
-                <h3>MEXICO</h3>
-            </div>
-            <div class="fecha5">
-                <img src="imagenes/banderaitalia.jpg" alt="italia"/>   
-                <h3>01-Dic</h3>
-                <h3>IMOLA</h3>
             </div>
         </div>
-    </section>
-    <section class="posiciones">
-        <h2>Posiciones</h2>  
-        <form>
-            <input type="button" value="Ver Resultados">
-        </form>
-        <div class="gpo">
-            <article class="tabla-division-1">
-                <h3 class="h3-division-1">Division ELITE</h3>
-                <div class="grupo-elite">
-                    <ol class="piloto-division-1">
-                        <li class="tituloFormato">Piloto</li>
-                        <li>Piloto #1</li>
-                        <li>Piloto #2</li>
-                        <li>Piloto #3</li>
-                        <li>Piloto #4</li>
-                        <li>Piloto #5</li>
-                    </ol>
-                    <ol class="escuderia-division-1">
-                        <li class="tituloFormato">Escuderia</li>
-                        <li>Red Bull</li>
-                        <li>Mercedes</li>
-                        <li>McLaren</li>
-                        <li>Red Bull</li>
-                        <li>Mercedes</li>
-                    </ol>
-                    <ol class="puntos-division-1">
-                        <li class="tituloFormato">Puntos</li>
-                        <li>125</li>
-                        <li>120</li>
-                        <li>95</li>
-                        <li>93</li>
-                        <li>75</li>
-                    </ol>
-                </div>
-            </article>               
-            <article class="tabla-division-2">
-                <h3 class="h3-division-2">Division CLASE A</h3>
-                <div class="grupo-elite">
-                    <ol class="piloto-division-2">
-                        <li class="tituloFormato">Piloto</li>
-                        <li>Piloto #1</li>
-                        <li>Piloto #2</li>
-                        <li>Piloto #3</li>
-                        <li>Piloto #4</li>
-                        <li>Piloto #5</li>
-                    </ol>
-                    <ol class="escuderia-division-2">
-                        <li class="tituloFormato">Escuderia</li>
-                        <li>Red Bull</li>
-                        <li>Mercedes</li>
-                        <li>McLaren</li>
-                        <li>Red Bull</li>
-                        <li>Mercedes</li>
-                    </ol>
-                    <ol class="puntos-division-2">
-                        <li class="tituloFormato">Puntos</li>
-                        <li>125</li>
-                        <li>120</li>
-                        <li>95</li>
-                        <li>93</li>
-                        <li>75</li>
-                    </ol>
-                </div>                
-            </article>                  
+        <!-- TEXTO -->
+        <div class="row contenedor-fila-texto justify-content-center">        
+            <div class="col-7 text-center"> 
+                <h1>LIGA VIRTUAL MRL</h1>
+                <p class="p1">
+                    Bienvenido(a) a Mexican Racing League! Una liga donde podrás experimentar ser un corredor en el mundo virtual y llevar la competición al siguiente nivel!
+                </p>
+                <p class="p2">
+                    Tu eliges: ser piloto o espectador. Somos una comunidad unida lista para disfrutar la competencia automovilística, desde entrar a ver nuestras transmisiones en vivo
+                    hasta poner las manos en tu volante de simulador y estar codo a codo con los mejores!
+                </p>
+            </div>
         </div>
-    </section>
-    <footer>
-        <section>
-            <p>
-                <h4>¿Quieres correr con nosotros? Haz clic <a href="inscripciones.html">aquí</a></h4>
-            </p>
-            </section>        
-            <section class="bloques">          
-                <ul class="bloque1">
-                    <li><a href="">Acerca de</a></li>
-                    <li><a href="">Soporte</a></li>
-                    <li><a href="">Patrocinios</a></li>
-                </ul>
-                <ul class="bloque2">
-                    <li><a href="">Política de Privacidad</a></li>
-                    <li><a href="">Términos y Condiciones</a></li>
-                    <li><a href="">Preguntas Frecuentes</a></li>
-                </ul>
-                <ul class="bloque3">
-                    <li><a href="">Unete a Nuestro Equipo</a></li>
-                    <li><a href="">Reglamento 2021</a></li>
-                    <li><a href="">DISCORD</a></li>
-                </ul>
-            </section>
-    </footer>
-
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- VIDEO -->
+        <div class="row contenedor-fila-video">            
+                <div class="col d-flex justify-content-center">
+                    <video class="contenedor-video" src="videos/limp.mp4" controls></video>
+                </div>                   
+        </div>   
+         <!-- NOTICIAS -->    
+        <div class="row contenedor-fila-noticias">
+            <div class="col text-center"> 
+                <h2>NOTICIAS MRL</h2>
+            </div>             
+        </div>  
+        <!-- BOOTSTRAP CAROUSEL -->
+        <div class="row justify-content-center">
+            <div class="col-3 contenedor-columna-carousel"></div>
+            <div class="col-6 contenedor-columna-carousel">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="7000">
+                            <div class="overlay-image" style="background-image:url(imagenes/fondo_francia.jpg)"></div>
+                            <div class="container">
+                                <h3>Accion en Paul Picard</h3>
+                                <p>Sesión de calificación corta en el circuito francés y después carrera al 50% </p>
+                                <!-- <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="overlay-image" style="background-image:url(imagenes/fondo_imola.jpg)"></div>
+                            <div class="container">
+                                <h3>Escándalo en IMOLA</h3>
+                                <p>Luego de una arrancada espectacular y de dominar la mayoría de la carrera, MRL Hakkinnen abandona por un choque con MRL Prost!</p>
+                            <!--  <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <div class="overlay-image" style="background-image:url(imagenes/posible_banner.JPG)"></div>
+                            <div class="container">
+                                <h3>Termina la Temporada 5</h3>
+                                <p>El circuito de China vio por terminada la temporada donde se corono MRL Valdo93 en la categoría ELITE y MRL 9JD9 en la CLASE A</p>
+                                <!-- <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                        <span class="sr-only"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                        <span class="sr-only"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 contenedor-columna-carousel"></div>
+        </div>
+        <!-- BOOTSTRAP CAROUSEL -->
+        <!-- CALENDARIO -->
+        <div class="row contenedor-fila-calendario">
+            <div class="col text-center">
+                <h2>CALENDARIO</h2>            
+            </div>
+        </div>
+        <div class="row contenedor-fila-calendario2">
+            <div class="col text-center"></div>
+            <div class="col text-center">
+                <img src="imagenes/banderacanada.jpg" alt="">
+                <div>MONTREAL</div>
+                <div>03-NOV</div>
+            </div>
+            <div class="col text-center"></div>
+            <div class="col text-center">
+                <img src="imagenes/banderachina.jpg" alt="">
+                <div>SHANGAI</div>
+                <div>10-NOV</div>
+            </div>
+            <div class="col text-center"></div>
+            <div class="col text-center">
+                <img src="imagenes/banderabelgica.jpg" alt="">
+                <div>SPA</div>
+                <div>17-NOV</div>
+            </div>
+            <div class="col text-center"></div>
+            <div class="col text-center">
+                <img src="imagenes/banderamexico.jpg" alt="">
+                <div>CDMX</div>
+                <div>24-NOV</div>
+            </div>
+            <div class="col text-center"></div>
+            <div class="col text-center"> 
+                <img src="imagenes/banderaitalia.jpg" alt="">                
+                <div>IMOLA</div>
+                <div>01-DIC</div>
+            </div>
+            <div class="col text-center"></div>
+        </div>
+        <!-- RESULTADOS -->
+        <div class="resultados">
+            <div class="row contenedor-fila-resultados">
+                <div class="col text-center">
+                    <h2>RESULTADOS</h2>            
+                </div>
+            </div>
+            <div class="row titulos-encabezado">
+                <div class="col text-center">ELITE</div>
+                <div class="col text-center">CLASE A</div>
+            </div>
+            <div class="row text-center">
+                <div class="col tabla-elite">
+                    <div class="row encabezado-tabla">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">#</div>
+                        <div class="col-6 text-center">PILOTO</div>
+                        <div class="col-2 text-center">PUNTOS</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">1</div>
+                        <div class="col-6 text-start">MRL Hakkinnen</div>
+                        <div class="col-2 text-center">175</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item2">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">2</div>
+                        <div class="col-6 text-start">MRL Schumacher</div>
+                        <div class="col-2 text-center">143</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">3</div>
+                        <div class="col-6 text-start">MRL Senna</div>
+                        <div class="col-2 text-center">122</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item2">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">4</div>
+                        <div class="col-6 text-start">MRL Rosberg</div>
+                        <div class="col-2 text-center">92</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">5</div>
+                        <div class="col-6 text-start">MRL Prost</div>
+                        <div class="col-2 text-center">51</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                </div>
+                <div class="col tabla-clasea">
+                    <div class="row encabezado-tabla">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">#</div>
+                        <div class="col-6 text-center">PILOTO</div>
+                        <div class="col-2 text-center">PUNTOS</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">1</div>
+                        <div class="col-6 text-start">MRL Fangio</div>
+                        <div class="col-2 text-center">225</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item2">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">2</div>
+                        <div class="col-6 text-start">MRL Piquet</div>
+                        <div class="col-2 text-center">163</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">3</div>
+                        <div class="col-6 text-start">MRL Mansell</div>
+                        <div class="col-2 text-center">102</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item2">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">4</div>
+                        <div class="col-6 text-start">MRL Alonso</div>
+                        <div class="col-2 text-center">43</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                    <div class="row resultados-item">
+                        <div class="col text-center nope"></div>
+                        <div class="col text-center">5</div>
+                        <div class="col-6 text-start">MRL Maldonado</div>
+                        <div class="col-2 text-center">-15</div>
+                        <div class="col text-center nope"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="row contenedor-fila-footer">
+            <div class="col text-center">
+                ¿Quieres correr con nosotros? Haz clic <a href="">AQUI</a>
+            </div>
+        </footer>  
+        <div class="contenedor-footer">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3 text-center">
+                    <a href="">Acerca De</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="">Política de Privacidad</a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="">Únete a Nuestro Equipo</a>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3 text-center">
+                    <a href="">Soporte</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="">Términos y Condiciones</a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="">Reglamento 2022</a>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3 text-center">
+                    <a href="">Patrocinios</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="">Preguntas Frecuentes</a>
+                </div>
+                <div class="col-3 text-center">
+                    <a href="">Redes Sociales</a>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
