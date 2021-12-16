@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "F1_regular";
     src: url(F1_regular.otf);
     font-size: 1em;
@@ -10,22 +10,24 @@
 }
 body{
     background-color:#041424;
-}
-.contenedor-imagen{
-    background-color: #041424;   
-    
+} */
+
+
+/* .contenedor-imagen{
+    background-color: #041424;
 }
 .sticker{
     position: sticky;
     z-index: 100;
     top: 0rem; 
 }
-.contenedor-nav{
-    font-size: 1.3rem;
-}
 .contenedor-fila-nav{
     background-color: #041424;     
 }
+.contenedor-nav{
+    font-size: 1.3rem;
+}
+
 .contenedor-nav li{   
     padding: 0 2rem 0 2rem;
 }
@@ -45,7 +47,7 @@ body{
 
 .contenedor-imagen img{      
     width: 25%;
-}
+} */
 .contenedor-video{    
     padding:0;
     width: 45%;

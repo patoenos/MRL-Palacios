@@ -1,0 +1,25 @@
+{
+  "name": "mrl-palacios",
+  "version": "1.0.0",
+  "description": "Proyecto para los desafíos de la comision CODER 24520 de Antonio Palacios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main2.scss css/main2.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patoenos/MRL-Palacios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patoenos/MRL-Palacios/issues"
+  },
+  "homepage": "https://github.com/patoenos/MRL-Palacios#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

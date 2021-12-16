@@ -1,0 +1,33 @@
+
+.sticker{
+    position: sticky;
+    z-index: 100;
+    top: 0rem; 
+    .contenedor-imagen{
+        background-color: $azulMRL;
+        img{      
+            width: 25%;
+        }
+    }
+    .contenedor-fila-nav{
+        background-color: $azulMRL; 
+        .contenedor-nav{
+            font-size: 1.3rem;
+            li{   
+                padding: 0 2rem 0 2rem;
+                a{
+                    color: gray;
+                    &:hover{
+                        color: $verdeMRL; 
+                        text-decoration: underline;
+                        text-decoration-color: $verdeMRL;
+                    }
+                    &:focus{
+                        color: $verdeMRL;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }    
+    }
+}

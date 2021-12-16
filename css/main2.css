@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "F1_regular";
+  src: url(F1_regular.otf);
+  font-size: 1em; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: F1_regular; }
+
+body {
+  background-color: #041424;
+  color: white; }
+
+.sticker {
+  position: sticky;
+  z-index: 100;
+  top: 0rem; }
+  .sticker .contenedor-imagen {
+    background-color: #041424; }
+    .sticker .contenedor-imagen img {
+      width: 25%; }
+  .sticker .contenedor-fila-nav {
+    background-color: #041424; }
+    .sticker .contenedor-fila-nav .contenedor-nav {
+      font-size: 1.3rem; }
+      .sticker .contenedor-fila-nav .contenedor-nav li {
+        padding: 0 2rem 0 2rem; }
+        .sticker .contenedor-fila-nav .contenedor-nav li a {
+          color: gray; }
+          .sticker .contenedor-fila-nav .contenedor-nav li a:hover {
+            color: #9df175;
+            text-decoration: underline;
+            text-decoration-color: #9df175; }
+          .sticker .contenedor-fila-nav .contenedor-nav li a:focus {
+            color: #9df175;
+            text-decoration: none; }
