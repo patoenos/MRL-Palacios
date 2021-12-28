@@ -1,0 +1,43 @@
+.contenedor-fila-footer{
+    background-color: $azulMRL;
+    color: white;
+    padding: 5rem 0 1rem 0;
+    font-size: 1.5rem;
+    h2{
+        font-size: 1.5rem;
+    }
+    a{
+        color: gray;
+        &:hover{
+            color: $verdeMRL; 
+            text-decoration: underline;
+            text-decoration-color: $verdeMRL;
+        }
+        &:focus{
+            color: $verdeMRL;
+            text-decoration: none;
+        }
+    }
+}
+.contenedor-footer{
+    background-color: $azulMRL;
+    @include sangria-secciones-vertical;
+    a{
+        color: gray;
+        &:hover{
+            color: $verdeMRL; 
+            text-decoration: underline;
+            text-decoration-color: $verdeMRL;
+        }
+        &:focus{
+            color: $verdeMRL;
+            text-decoration: none;
+        }        
+    }      
+    /* APLICACION DEL MAPA */  
+    @each $red, $color in $redes-sociales{
+        .#{$red}-link{
+            color: $color;
+        }
+    }
+}

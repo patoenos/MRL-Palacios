@@ -1,0 +1,10 @@
+1.- Se usan @extend, @mixin e @include donde se requiere.
+2.- Se colocan keywords en index.html
+3.- Se coloca descripcion en index.html
+4.- Se redujo el tamaño de la mayoría de las imágenes para quitar peso a la página.
+5.- El video que se reproduce en la página ahora se trae de un link de youtube.
+6.- Se agrega el guin bajo "_" a las páginas de SASS que compilan a la principal que es main2
+7.- Se aplica mapa de variables para cambiar color a las redes sociales (aun en busqueda de más aplicaciones para los mapas).
+8.- Se usa el loop @each para aplicar el mapa de variables.+}
+9.- Se agrega al menos un h1 en todas las paginas.
+10.- Se cambian los titulos de las paginas HTML a lo recomendado en clase

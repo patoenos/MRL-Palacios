@@ -1,37 +1,198 @@
+/* APLICACION DEL MIXIN */
+/* APLICACION DEL MAPA EN FOOTER */
 @font-face {
   font-family: "F1_regular";
-  src: url(F1_regular.otf);
-  font-size: 1em; }
+  src: url(F1_regular.otf); }
 
 * {
   margin: 0;
   padding: 0;
+  font-size: 1em;
   font-family: F1_regular; }
-
-body {
-  background-color: #041424;
-  color: white; }
+  * body {
+    background-color: #011627;
+    color: white; }
 
 .sticker {
   position: sticky;
   z-index: 100;
   top: 0rem; }
-  .sticker .contenedor-imagen {
-    background-color: #041424; }
-    .sticker .contenedor-imagen img {
+  .sticker .contenedor-imagen, .sticker .contenedor-fila-nav {
+    background-color: #011627; }
+    .sticker .contenedor-imagen img, .sticker .contenedor-fila-nav img {
       width: 25%; }
-  .sticker .contenedor-fila-nav {
-    background-color: #041424; }
-    .sticker .contenedor-fila-nav .contenedor-nav {
+  .sticker .contenedor-fila-nav .contenedor-columna-nav {
+    padding: 0;
+    border-bottom: solid 5px crimson; }
+    .sticker .contenedor-fila-nav .contenedor-columna-nav .contenedor-nav {
       font-size: 1.3rem; }
-      .sticker .contenedor-fila-nav .contenedor-nav li {
-        padding: 0 2rem 0 2rem; }
-        .sticker .contenedor-fila-nav .contenedor-nav li a {
+      .sticker .contenedor-fila-nav .contenedor-columna-nav .contenedor-nav li {
+        padding: 0 2rem 0 2rem;
+        /* esto puede ser un mixin */ }
+        .sticker .contenedor-fila-nav .contenedor-columna-nav .contenedor-nav li a {
           color: gray; }
-          .sticker .contenedor-fila-nav .contenedor-nav li a:hover {
+          .sticker .contenedor-fila-nav .contenedor-columna-nav .contenedor-nav li a:hover {
             color: #9df175;
             text-decoration: underline;
             text-decoration-color: #9df175; }
-          .sticker .contenedor-fila-nav .contenedor-nav li a:focus {
+          .sticker .contenedor-fila-nav .contenedor-columna-nav .contenedor-nav li a:focus {
             color: #9df175;
             text-decoration: none; }
+
+.contenedor-fila-texto {
+  color: white;
+  background-color: #011627;
+  padding: 5rem 0 5rem 0;
+  font-size: 1.3rem;
+  line-height: 3rem; }
+  .contenedor-fila-texto h1 {
+    padding: 0 0 3rem 0;
+    font-size: 2rem;
+    color: #9df175; }
+  .contenedor-fila-texto .p1 {
+    padding: 0 0 2rem 0; }
+
+.contenedor-columna-video {
+  border: none;
+  background-color: #011627;
+  margin: 0; }
+
+.contenedor-fila-noticias {
+  background-color: #011627;
+  padding: 5rem 0 5rem 0;
+  color: white; }
+  .contenedor-fila-noticias h2 {
+    color: #9df175; }
+
+.contenedor-columna-carousel {
+  background-color: #011627; }
+  .contenedor-columna-carousel .carousel-item {
+    height: 32rem;
+    background-color: black;
+    color: white;
+    position: relative; }
+    .contenedor-columna-carousel .carousel-item .overlay-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.4; }
+    .contenedor-columna-carousel .carousel-item .container {
+      margin: 0;
+      /*  border:$border; */
+      height: 32rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 24rem;
+      padding-bottom: 50px; }
+
+.contenedor-fila-calendario {
+  color: white;
+  background-color: #011627;
+  padding: 5rem 0 5rem 0;
+  font-size: 1.5rem; }
+  .contenedor-fila-calendario h2 {
+    padding: 0;
+    font-size: 2rem;
+    background-color: #011627;
+    color: #9df175; }
+
+.contenedor-carousel-calendario {
+  width: 80%;
+  padding: 0 0 0 4rem; }
+  .contenedor-carousel-calendario .item .contenedor-card {
+    width: 11rem;
+    height: 16rem; }
+    .contenedor-carousel-calendario .item .contenedor-card img {
+      width: 100%; }
+    .contenedor-carousel-calendario .item .contenedor-card .card-body {
+      padding: 1rem 0 0 0;
+      color: white;
+      background-color: #011627;
+      font-size: 1.2rem; }
+      .contenedor-carousel-calendario .item .contenedor-card .card-body h4 {
+        color: #9df175; }
+      .contenedor-carousel-calendario .item .contenedor-card .card-body h5 {
+        color: #9df175; }
+
+.resultados {
+  background-color: #011627; }
+  .resultados .contenedor-fila-resultados {
+    padding: 5rem 0 5rem 0;
+    font-size: 1.5rem; }
+    .resultados .contenedor-fila-resultados h2 {
+      padding: 0;
+      margin: 0 5rem 0 5rem;
+      font-size: 2rem;
+      background-color: #011627;
+      color: #9df175; }
+  .resultados .titulos-encabezado {
+    padding: 0 1rem 0 1rem;
+    color: #9df175;
+    font-size: 1.5rem; }
+  .resultados .encabezado-tabla {
+    font-size: 1.3rem;
+    color: #9df175; }
+  .resultados .resultados-item, .resultados .resultados-item2 {
+    background-color: teal;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.3rem; }
+    .resultados .resultados-item .nope, .resultados .resultados-item2 .nope {
+      background-color: #011627; }
+  .resultados .resultados-item2 {
+    /* Piso el background TEAL de las tablas */
+    background-color: #011627; }
+  .resultados .columna-estadisticas-completas {
+    padding: 5rem 0 2rem 0;
+    /*  border:$border; */ }
+    .resultados .columna-estadisticas-completas .boton-estadisticas-completas {
+      background-color: gray;
+      color: white;
+      border: gray;
+      height: 3rem; }
+      .resultados .columna-estadisticas-completas .boton-estadisticas-completas:hover {
+        background-color: teal; }
+
+.contenedor-fila-footer {
+  background-color: #011627;
+  color: white;
+  padding: 5rem 0 1rem 0;
+  font-size: 1.5rem; }
+  .contenedor-fila-footer h2 {
+    font-size: 1.5rem; }
+  .contenedor-fila-footer a {
+    color: gray; }
+    .contenedor-fila-footer a:hover {
+      color: #9df175;
+      text-decoration: underline;
+      text-decoration-color: #9df175; }
+    .contenedor-fila-footer a:focus {
+      color: #9df175;
+      text-decoration: none; }
+
+.contenedor-footer {
+  background-color: #011627;
+  padding: 5rem 0 5rem 0;
+  /* APLICACION DEL MAPA */ }
+  .contenedor-footer a {
+    color: gray; }
+    .contenedor-footer a:hover {
+      color: #9df175;
+      text-decoration: underline;
+      text-decoration-color: #9df175; }
+    .contenedor-footer a:focus {
+      color: #9df175;
+      text-decoration: none; }
+  .contenedor-footer .twitch-link {
+    color: #7E40DB; }
+  .contenedor-footer .facebook-link {
+    color: #1298F6; }
+  .contenedor-footer .youtube-link {
+    color: #FF0000; }

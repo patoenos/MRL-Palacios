@@ -1,0 +1,51 @@
+.resultados{
+    background-color: $azulMRL;
+    .contenedor-fila-resultados{       
+        padding: 5rem 0 5rem 0;
+        font-size: 1.5rem;
+        h2{
+            padding: 0;
+            margin: 0 5rem 0 5rem;
+            font-size: 2rem;
+            background-color: $azulMRL;
+            color: $verdeMRL;
+        }
+    }
+    .titulos-encabezado{
+        padding: 0 1rem 0 1rem;
+        color: $verdeMRL; 
+        font-size: 1.5rem;
+    }
+    .encabezado-tabla{
+        font-size: 1.3rem;
+        color: $verdeMRL;    
+    }
+    .resultados-item{
+        background-color: teal;
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 1.3rem;
+        .nope{
+            background-color: $azulMRL;
+        }
+    }
+    .resultados-item2{
+        @extend .resultados-item; 
+        /* Piso el background TEAL de las tablas */       
+        background-color: $azulMRL;
+    }
+    .columna-estadisticas-completas{
+        padding: 5rem 0 2rem 0;
+       /*  border:$border; */
+       .boton-estadisticas-completas{
+           background-color: gray;
+           color: white;
+           border:gray;
+           height: 3rem;
+           &:hover{
+               background-color: teal;
+           }
+       }
+    }
+}

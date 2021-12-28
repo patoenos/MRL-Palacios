@@ -1,0 +1,16 @@
+$verdeMRL: #9df175;
+$azulMRL: #011627; 
+$rojoMRL: #dc143c;    
+$border: solid 3px $rojoMRL;
+
+/* APLICACION DEL MIXIN */
+@mixin sangria-secciones-vertical {
+    padding: 5rem 0 5rem 0;  
+
+}
+/* APLICACION DEL MAPA EN FOOTER */
+$redes-sociales: (
+    twitch: #7E40DB,
+    facebook: #1298F6,
+    youtube: #FF0000,   
+);

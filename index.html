@@ -8,9 +8,22 @@
     <link rel="shortcut icon" href="imagenes/Escudo.png">
     <!-- Link a CSS Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- 1.- Owl Carousel Min,css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 2.- Owl Carousel Theme Min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Link a CSS Propio -->
     <link rel="stylesheet" href="css/main2.css">
-    <title>MRL</title>
+
+    <!-- Keywords -->
+    <meta name="keywords" content="simracing, f1, carrera virtual, sim racing, formula uno, x box, league racing, carrera en linea, codemasters 2021, simulacion carreras">
+
+    <!-- Description -->
+    <meta name="description" content="Mexican Racing League liga de carreras online del juego de formula uno para X Box One para competicion realista">
+
+    <title>MRL | Home</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -18,18 +31,18 @@
         <div class="sticker">
             <div class="row contenedor-imagen">
                 <div class="col d-flex justify-content-center">
-                    <img src="imagenes/chica.png" alt="">              
+                    <img src="imagenes/chica.jpg.jpg" alt="">              
                 </div>           
             </div>
             <!-- NAV -->
-            <div class="row contenedor-fila-nav">
-                <div class="col"> 
+            <div class="row contenedor-fila-nav justify-content-center">
+                <div class="col-10 contenedor-columna-nav"> 
                     <ul class="nav justify-content-center contenedor-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Divisiones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inscripciones</a>
+                            <a class="nav-link" href="inscripciones.html">Inscripciones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Calendario</a>
@@ -55,9 +68,9 @@
             </div>
         </div>
         <!-- VIDEO -->
-        <div class="row contenedor-fila-video">            
-                <div class="col d-flex justify-content-center">
-                    <video class="contenedor-video" src="videos/limp.mp4" controls></video>
+        <div class="row contenedor-fila-video ">            
+                <div class="col contenedor-columna-video d-flex align-self-center justify-content-center">                   
+                   <iframe width="660" height="415" src="https://www.youtube.com/embed/2e6f9TaJko0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>                   
         </div>   
          <!-- NOTICIAS -->    
@@ -71,7 +84,7 @@
             <div class="col-3 contenedor-columna-carousel"></div>
             <div class="col-6 contenedor-columna-carousel">
                 <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators">    
                         <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
                         <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
@@ -80,7 +93,7 @@
                         <div class="carousel-item active" data-bs-interval="7000">
                             <div class="overlay-image" style="background-image:url(imagenes/fondo_francia.jpg)"></div>
                             <div class="container">
-                                <h3>Accion en Paul Picard</h3>
+                                <h3>Acción en Paul Picard</h3>
                                 <p>Sesión de calificación corta en el circuito francés y después carrera al 50% </p>
                                 <!-- <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
                             </div>
@@ -97,7 +110,7 @@
                             <div class="overlay-image" style="background-image:url(imagenes/posible_banner.JPG)"></div>
                             <div class="container">
                                 <h3>Termina la Temporada 5</h3>
-                                <p>El circuito de China vio por terminada la temporada donde se corono MRL Valdo93 en la categoría ELITE y MRL 9JD9 en la CLASE A</p>
+                                <p>El GP de China vio por terminada la temporada donde se coronó MRL Valdo93 en la categoría ELITE y MRL 6JD9 en la CLASE A</p>
                                 <!-- <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
                             </div>
                         </div>
@@ -114,46 +127,298 @@
             </div>
             <div class="col-3 contenedor-columna-carousel"></div>
         </div>
-        <!-- BOOTSTRAP CAROUSEL -->
         <!-- CALENDARIO -->
         <div class="row contenedor-fila-calendario">
             <div class="col text-center">
-                <h2>CALENDARIO</h2>            
+                <h2>CALENDARIO 2022</h2>            
             </div>
         </div>
-        <div class="row contenedor-fila-calendario2">
-            <div class="col text-center"></div>
-            <div class="col text-center">
-                <img src="imagenes/banderacanada.jpg" alt="">
-                <div>MONTREAL</div>
-                <div>03-NOV</div>
+        <section>
+            <div class="container-fluid my-5 contenedor-carousel-calendario"> <!-- w-75 escala el contenedor mas chico -->
+                <!-- <h1 class="text-center fw-bold display-1 mb-3">Owl <span class="text-danger">Carousel</span></h1> -->
+                <div class="row mt-5">
+                    <div class="owl-carousel owl-theme contenedor-owl-carousel">
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderabahrein.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #01</div>
+                                    <h4>SAHKIR</h4>
+                                    <div>BAHREIN</div>
+                                    <div>20-Mar</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaarabiasaudita.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #02</div>
+                                    <h4>JEDAH</h4>
+                                    <div>A. SAUDITA</div>
+                                    <div>27-Mar</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaaustralia.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #03</div>
+                                    <h4>ALBERT PARK</h4>
+                                    <div>AUSTRALIA</div>
+                                    <div>10-Abr</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaitalia.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #04</div>
+                                    <h4>IMOLA</h4>
+                                    <div>EMILIA-ROMAGNA</div>
+                                    <div>24-Abr</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderausa.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #05</div>
+                                    <h4>MIAMI CIRCUIT</h4>
+                                    <div>MIAMI</div>
+                                    <div>08-May</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaespana.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #06</div>
+                                    <h4>MONTMELÓ</h4>
+                                    <div>ESPAÑA</div>
+                                    <div>22-May</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderamonaco.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #07</div>
+                                    <h5>MONTECARLO</h5>
+                                    <div>MONACO</div>
+                                    <div>29-May</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaazerbayan.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #08</div>
+                                    <h4>BAKU</h4>
+                                    <div>AZERBAYÁN</div>
+                                    <div>12-Jun</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderacanada.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #09</div>
+                                    <h4>MONTREAL</h4>
+                                    <div>CANADA</div>
+                                    <div>19-Jun</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderauk.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #10</div>
+                                    <h5>SILVERSTONE</h5>
+                                    <div>REINO UNIDO</div>
+                                    <div>03-Jul</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaaustria.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #11</div>
+                                    <h4>RED BULL RING</h4>
+                                    <div>AUSTRIA</div>
+                                    <div>10-Jul</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderafrancia.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #12</div>
+                                    <h4>PAUL RICARD</h4>
+                                    <div>FRANCIA</div>
+                                    <div>24-Jul</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderahungria.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #13</div>
+                                    <h5>HNGARORING</h5>
+                                    <div>HUNGRIA</div>
+                                    <div>31-Jul</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderabelgica.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #14</div>
+                                    <h4>SPA</h4>
+                                    <div>BELGICA</div>
+                                    <div>28-Ago</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaholanda.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #15</div>
+                                    <h5>ZANDVOORT</h5>
+                                    <div>PAISES BAJOS</div>
+                                    <div>04-Sep</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaitalia.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #16</div>
+                                    <h4>MONZA</h4>
+                                    <div>ITALIA</div>
+                                    <div>11-Sep</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderarusia.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #17</div>
+                                    <h4>SOCHI</h4>
+                                    <div>RUSIA</div>
+                                    <div>25-Sep</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderasingapur.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #18</div>
+                                    <h4>MARINA BAY</h4>
+                                    <div>SINGAPUR</div>
+                                    <div>02-Oct</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderajapon.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #19</div>
+                                    <h4>SUSUKA</h4>
+                                    <div>JAPON</div>
+                                    <div>09-Oct</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderausa.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #20</div>
+                                    <h4>COTA</h4>
+                                    <div>ESTADOS UNIDOS</div>
+                                    <div>23-Oct</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderamexico.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #21</div>
+                                    <h4>HNOS RODRIGUEZ</h4>
+                                    <div>MEXICO</div>
+                                    <div>30-Oct</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderabrasil.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #22</div>
+                                    <h5>INTERLAGOS</h5>
+                                    <div>BRASIL</div>
+                                    <div>13-Nov</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow contenedor-card">
+                                <img src="imagenes/banderaemiratosarabesunidos.jpg" alt="image" class="card-img-top">
+                                <div class="card-body">
+                                    <div>Fecha #23</div>
+                                    <h4>YAS MARINA</h4>
+                                    <div>ABU DABI</div>
+                                    <div>20-Nov</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITEM ENDS -->
+                    </div>
+                </div>
             </div>
-            <div class="col text-center"></div>
-            <div class="col text-center">
-                <img src="imagenes/banderachina.jpg" alt="">
-                <div>SHANGAI</div>
-                <div>10-NOV</div>
-            </div>
-            <div class="col text-center"></div>
-            <div class="col text-center">
-                <img src="imagenes/banderabelgica.jpg" alt="">
-                <div>SPA</div>
-                <div>17-NOV</div>
-            </div>
-            <div class="col text-center"></div>
-            <div class="col text-center">
-                <img src="imagenes/banderamexico.jpg" alt="">
-                <div>CDMX</div>
-                <div>24-NOV</div>
-            </div>
-            <div class="col text-center"></div>
-            <div class="col text-center"> 
-                <img src="imagenes/banderaitalia.jpg" alt="">                
-                <div>IMOLA</div>
-                <div>01-DIC</div>
-            </div>
-            <div class="col text-center"></div>
-        </div>
+        </section>
+
         <!-- RESULTADOS -->
         <div class="resultados">
             <div class="row contenedor-fila-resultados">
@@ -161,49 +426,50 @@
                     <h2>RESULTADOS</h2>            
                 </div>
             </div>
+
             <div class="row titulos-encabezado">
                 <div class="col text-center">ELITE</div>
                 <div class="col text-center">CLASE A</div>
             </div>
-            <div class="row text-center">
+            <div class="row">
                 <div class="col tabla-elite">
                     <div class="row encabezado-tabla">
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                         <div class="col text-center">#</div>
                         <div class="col-6 text-center">PILOTO</div>
                         <div class="col-2 text-center">PUNTOS</div>
                         <div class="col text-center nope"></div>
                     </div>
                     <div class="row resultados-item">
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                         <div class="col text-center">1</div>
                         <div class="col-6 text-start">MRL Hakkinnen</div>
                         <div class="col-2 text-center">175</div>
                         <div class="col text-center nope"></div>
                     </div>
                     <div class="row resultados-item2">
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                         <div class="col text-center">2</div>
                         <div class="col-6 text-start">MRL Schumacher</div>
                         <div class="col-2 text-center">143</div>
                         <div class="col text-center nope"></div>
                     </div>
                     <div class="row resultados-item">
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                         <div class="col text-center">3</div>
                         <div class="col-6 text-start">MRL Senna</div>
                         <div class="col-2 text-center">122</div>
                         <div class="col text-center nope"></div>
                     </div>
                     <div class="row resultados-item2">
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                         <div class="col text-center">4</div>
                         <div class="col-6 text-start">MRL Rosberg</div>
                         <div class="col-2 text-center">92</div>
                         <div class="col text-center nope"></div>
                     </div>
                     <div class="row resultados-item">
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                         <div class="col text-center">5</div>
                         <div class="col-6 text-start">MRL Prost</div>
                         <div class="col-2 text-center">51</div>
@@ -216,50 +482,55 @@
                         <div class="col text-center">#</div>
                         <div class="col-6 text-center">PILOTO</div>
                         <div class="col-2 text-center">PUNTOS</div>
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                     </div>
                     <div class="row resultados-item">
                         <div class="col text-center nope"></div>
                         <div class="col text-center">1</div>
                         <div class="col-6 text-start">MRL Fangio</div>
                         <div class="col-2 text-center">225</div>
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                     </div>
                     <div class="row resultados-item2">
                         <div class="col text-center nope"></div>
                         <div class="col text-center">2</div>
                         <div class="col-6 text-start">MRL Piquet</div>
                         <div class="col-2 text-center">163</div>
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                     </div>
                     <div class="row resultados-item">
                         <div class="col text-center nope"></div>
                         <div class="col text-center">3</div>
                         <div class="col-6 text-start">MRL Mansell</div>
                         <div class="col-2 text-center">102</div>
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                     </div>
                     <div class="row resultados-item2">
                         <div class="col text-center nope"></div>
                         <div class="col text-center">4</div>
                         <div class="col-6 text-start">MRL Alonso</div>
                         <div class="col-2 text-center">43</div>
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                     </div>
                     <div class="row resultados-item">
                         <div class="col text-center nope"></div>
                         <div class="col text-center">5</div>
                         <div class="col-6 text-start">MRL Maldonado</div>
                         <div class="col-2 text-center">-15</div>
-                        <div class="col text-center nope"></div>
+                        <div class="col-2 text-center nope"></div>
                     </div>
+                </div>
+            </div>
+            <div class="row fila-estadisticas-completas">
+                <div class="col columna-estadisticas-completas text-center">
+                    <button type="button" class="btn btn-primary boton-estadisticas-completas">Ver Estadísticas Completas</button>
                 </div>
             </div>
         </div>
         <!-- FOOTER -->
         <footer class="row contenedor-fila-footer">
             <div class="col text-center">
-                ¿Quieres correr con nosotros? Haz clic <a href="">AQUI</a>
+                <h2>¿Quieres correr con nosotros?</h2> Haz clic <a href="">AQUI</a>
             </div>
         </footer>  
         <div class="contenedor-footer">
@@ -292,18 +563,42 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col-3 text-center">
-                    <a href="">Patrocinios</a>
+                    <a class="facebook-link" href="">Facebook</a>
                 </div>
                 <div class="col-4 text-center">
-                    <a href="">Preguntas Frecuentes</a>
+                    <a class="youtube-link" href="">You Tube</a>
                 </div>
                 <div class="col-3 text-center">
-                    <a href="">Redes Sociales</a>
+                    <a class="twitch-link" href="">Twitch</a>
                 </div>
                 <div class="col"></div>
             </div>
         </div>
     </div>
+    <!-- Libreria BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- 0.- Jquary CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 1.- Owl Carousel Min .js-->  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- init Owl Carousel -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
 </body>
 </html>
