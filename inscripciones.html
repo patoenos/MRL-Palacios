@@ -29,7 +29,7 @@
                             <a class="nav-link" href="index.html">Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Divisiones</a>
+                            <a class="nav-link" href="divisiones.html">Divisiones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Calendario</a>
@@ -47,73 +47,81 @@
                 <h2>Inscripcion a la Liga Virtual</h2>   
             </div>            
         </div>
-        <div class="row text-center mt-5">
+        <div class="row text-center parrafo-inscripciones mt-5">
             <p>Para inscribirte necesitamos tus datos para ponernos en contacto contigo lo más pronto posible. <br>Por favor, llena el formulario para poder buscarte.</p>
         </div>
         <!-- FORMULARIO -->
         <form class="formulario-inscripciones">
-            <div class="row text-center mt-5">
-            <h2>Formulario</h2>
-            </div>
-            <div class="row text-center mt-5">
-                <div class="col"></div>
-                <div class="col">
-                    <label for="nombre" class="etiqueta-nombre">Nombre</label>  
-                </div>
-                <div class="col">
-                    <input type="text" class ="input-nombre" name="nombre" id="nombre" autocomplete="off" maxlength="17" placeholder=" "/>                    
-                </div>
-                <div class="col">
-                    <label for="apellido" class="etiqueta-apellido">Apellido</label>   
-                </div>
-                <div class="col">
-                    <input type="text" class ="input-apellido" name="apellido" id="apellido" autocomplete="off" maxlength="17" placeholder=" "/>      
-                </div>
-                <div class="col">
-                    <label for="gt"class="etiqueta-gt">GamerTag (XBox One)</label>                      
-                </div>
-                <div class="col">                    
-                    <input type="text" class="input-gt" name="gt" id="gt" autocomplete="off" maxlength="17" placeholder=" "/>
-                </div>
-                <div class="col"></div>
-            </div>
-
-            <div class="row texto2-inscripciones">Division a la que quieres entrar:
+            <div class="row text-center my-5">
+                <h2>Formulario</h2>
+            </div>            
+            <div class="contenedor-grid-inscripciones">
+               
+                <input type="text" class ="input-nombre" name="nombre" id="nombre" autocomplete="off" maxlength="17" placeholder=" "/>                    
+                <label for="nombre" class="etiqueta-nombre">Nombre</label>  
                 
-            </div>          
+                <input type="text" class ="input-apellido" name="apellido" id="apellido" autocomplete="off" maxlength="17" placeholder=" "/>      
+                <label for="apellido" class="etiqueta-apellido">Apellido</label>   
+                
+                <input type="text" class="input-gt" name="gt" id="gt" autocomplete="off" maxlength="17" placeholder=" "/>        
+                <label for="gt"class="etiqueta-gt">GamerTag (XBox One)</label>
+                
+                <input type="text" class="input-telefono" name="telefono" id="telefono" autocomplete="off" maxlength="15" placeholder=" "/>                            
+                <label for="telefono" class="etiqueta-telefono">Whatsapp</label>
+                
 
-            <!-- RADIO BUTTONS CON BS -->
-            <input class="form-check-input input-elite" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label etiqueta-elite" for="flexRadioDefault1">
-               ELITE
-            </label>
-            
-            <input class="form-check-input input-clasea" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label etiqueta-clasea" for="flexRadioDefault2">
-                CLASE A
-            </label>
-            <input type="text" class="input-telefono" name="telefono" id="telefono" autocomplete="off" maxlength="15" placeholder=" "/>
-            <!-- RADIO BUTTONS CON BS -->
+                <div class="texto1-inscripciones">Division a la que quieres entrar:</div>  
+                <input class="form-check-input input-elite" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label etiqueta-elite" for="flexRadioDefault1">ELITE</label>    
     
-            <label for="telefono" class="etiqueta-telefono">Numero Whatsapp</label>
-       
-            <button type="button" class="btn btn-outline-primary boton-inscripciones">ENVIAR</button>
+                <input class="form-check-input input-clasea" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label etiqueta-clasea" for="flexRadioDefault2">CLASE A</label>                   
+            </div> 
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-primary boton-inscripciones">ENVIAR</button>
+                </div>
+            </div>            
         </form>   
         <!-- CONTACTO MESA DIRECTIVA -->    
-        <section class="inscripciones-contacto">
-            <h2>Contacto</h2>
-            <h3>Mesa Directiva</h3>
-            <ul>
-                <li>Antonio Palacios</li>
-                <li>Alejandro Mendoza</li>
-                <li>Daniel Arrieta</li>
-            </ul>
+        <section class="inscripciones-contacto my-5">
+            <div class="row text-center my-5">
+                <h2>Contacto</h2>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2"><h3>Mesa Directiva</h3></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>                
+            </div>
+            <div class="row my-5">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <ul>
+                        <li>Antonio Palacios</li>
+                        <li>Alejandro Mendoza</li>
+                        <li>Daniel Arrieta</li>
+                    </ul>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row text-center">
             <h4>Cualquier asunto relacionado con la estructura de la liga favor de escribirnos a <a href="">mrl.mesadirectiva@gmail.com</a></h4>
+            </div>
         </section>  
        <!-- FOOTER -->
        <footer class="row contenedor-fila-footer">
         <div class="col text-center">
-            <h2>¿Quieres correr con nosotros?</h2> Haz clic <a href="">AQUI</a>
+            <h2>¿Quieres correr con nosotros?</h2> Haz clic <a href="inscripciones.html">AQUI</a>
         </div>
     </footer>  
     <div class="contenedor-footer">

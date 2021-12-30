@@ -1,0 +1,179 @@
+.texto-inscripciones{
+    /* EMPIEZA PAGE INSCRIPCIONES */
+    color:$verdeMRL;
+}
+.parrafo-inscripciones{
+    color:white;
+    font-size: 1.3rem;
+}
+.formulario-inscripciones{
+    h2{
+        color:$verdeMRL;
+    }
+    .contenedor-grid-inscripciones{       
+        display: grid;
+        grid-gap: 2rem 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;  
+        .input-nombre{
+            grid-row: 1;
+            grid-column: 2;                    
+            @include formato-campos-inscripciones;            
+            &:focus{
+                border: 2px solid $verdeMRL;
+                
+            } 
+            &:hover{
+                border: 2px solid $verdeMRL;
+            }            
+        }
+        .input-nombre:focus ~.etiqueta-nombre,
+        .input-nombre:not(:placeholder-shown).input-nombre:not(:focus) ~ .etiqueta-nombre{                    
+            background-color: $azulMRL;
+            width: 40%;
+            padding: 0;
+            position: relative;
+            top: -1.5rem;
+            font-size: 1rem;
+            color: white;
+        }
+        .etiqueta-nombre{            
+             grid-row: 1;
+             grid-column: 2;
+             align-self: center;            
+             padding: 0 0 0 1rem;
+             color: gray;    
+             background: none;
+             cursor: text;     
+             transition: all 0.5s ease-in;   
+         }     
+         .input-apellido{
+            grid-row: 1;
+            grid-column: 4;            
+            @include formato-campos-inscripciones;
+            &:focus{
+                border: 2px solid $verdeMRL;
+                
+            } 
+            &:hover{
+                border: 2px solid $verdeMRL;
+            }    
+        }
+        .input-apellido:focus ~.etiqueta-apellido,
+        .input-apellido:not(:placeholder-shown).input-apellido:not(:focus) ~ .etiqueta-apellido{                    
+            background-color: $azulMRL;
+            width: 40%;
+            padding: 0;
+            position: relative;
+            top: -1.5rem;
+            font-size: 1rem;
+            color: white;
+        }
+        .etiqueta-apellido{
+            grid-row: 1;
+            grid-column: 4;
+            align-self: center;
+            padding: 0 0 0 1rem;           
+            color: gray;    
+            background: none;
+            cursor: text;     
+            transition: all 0.5s ease-in;   
+        }
+        .input-gt{
+            grid-row: 1;
+            grid-column: 6;            
+            @include formato-campos-inscripciones;
+            &:focus{
+                border: 2px solid $verdeMRL;
+                
+            } 
+            &:hover{
+                border: 2px solid $verdeMRL;
+            }    
+        }
+        .input-gt:focus ~.etiqueta-gt,
+        .input-gt:not(:placeholder-shown).input-gt:not(:focus) ~ .etiqueta-gt{                    
+            background-color: $azulMRL;
+            width: 80%;
+            padding: 0;
+            position: relative;
+            top: -1.5rem;
+            font-size: 1rem;
+            color: white;
+        }
+        .etiqueta-gt{
+            grid-row: 1;
+            grid-column: 6;
+            align-self: center;
+            padding: 0 0 0 1rem;
+            color: gray;    
+            background: none;
+            cursor: text;     
+            transition: all 0.5s ease-in;   
+        }
+        .input-telefono{
+            grid-row: 2;
+            grid-column: 2;            
+            @include formato-campos-inscripciones;
+            &:focus{
+                border: 2px solid $verdeMRL;
+                
+            } 
+            &:hover{
+                border: 2px solid $verdeMRL;
+            }    
+        }
+        .input-telefono:focus ~.etiqueta-telefono,
+        .input-telefono:not(:placeholder-shown).input-telefono:not(:focus) ~ .etiqueta-telefono{                    
+            background-color: $azulMRL;
+            width: 80%;
+            padding: 0;
+            position: relative;
+            top: -1.5rem;
+            font-size: 1rem;
+            color: white;
+        }
+        .etiqueta-telefono{
+            grid-row: 2;
+            grid-column: 2;
+            align-self: center;
+            padding: 0 0 0 1rem;
+            color: gray;    
+            background: none;
+            cursor: text;     
+            transition: all 0.5s ease-in;   
+        }
+        
+        .texto1-inscripciones{
+            grid-row: 3;
+            grid-column: 2/4;   
+        }
+        .input-elite{
+            grid-row: 4;
+            grid-column: 2;
+        }
+        .etiqueta-elite{
+            grid-row: 4;
+            grid-column: 2;
+            padding-left: 2rem;
+        }
+        .input-clasea{
+            grid-row: 4;
+            grid-column: 3;
+        }
+        .etiqueta-clasea{
+            grid-row: 4;
+            grid-column: 3;
+            padding-left: 2rem;
+        }
+    }     
+}
+
+.inscripciones-contacto{
+    h2,h3{
+       color: $verdeMRL; 
+    }
+    ul{
+        font-size: 1.3rem;
+    }
+}
