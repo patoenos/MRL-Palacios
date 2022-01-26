@@ -1,37 +1,48 @@
-.sticker{
-    position: sticky;
-    z-index: 100;
-    top: 0rem; 
-    .contenedor-imagen{
-        background-color: $azulMRL;
-        img{      
-            width: 25%;
+.contenedor-general{
+    padding: 0;
+    margin: 0;
+    .sticker{
+        /* border: $border;  */     /* borrar despues */  
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        z-index: 10;
+        top: 0rem; 
+        .contenedor-imagen{       
+            border: $border;      /* borrar despues */  
+            background-color: $azulMRL;
+            .contenedor-columna-imagen{  
+                img{                          
+                    width: $anchoImagen;
+                   }
+            }            
         }
-    }
-    .contenedor-fila-nav{
-        @extend .contenedor-imagen;        
-        .contenedor-columna-nav{  
-            padding: 0;            
-            border-bottom: solid 5px crimson; 
-            .contenedor-nav{
-                font-size: 1.3rem;
-                li{   
-                    padding: 0 2rem 0 2rem;
-                    /* esto puede ser un mixin */
-                    a{
-                        color: gray;
-                        &:hover{
-                            color: $verdeMRL; 
-                            text-decoration: underline;
-                            text-decoration-color: $verdeMRL;
-                        }
-                        &:focus{
-                            color: $verdeMRL;
-                            text-decoration: none;
+        .contenedor-fila-nav{
+            @extend .contenedor-imagen;        
+            .contenedor-columna-nav{  
+                padding: 0;            
+                border-bottom: solid 5px crimson; 
+                .contenedor-nav{
+                    font-size: 1.3rem;
+                    li{                         
+                        padding: 0 3rem;
+                        /* esto puede ser un mixin */
+                        a{
+                            padding: 0.5rem 0 0.5rem 0;                           
+                            color: gray;
+                            &:hover{
+                                color: $verdeMRL; 
+                                text-decoration: underline;
+                                text-decoration-color: $verdeMRL;
+                            }
+                            &:focus{
+                                color: $verdeMRL;
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
-            }
-            }    
+                }    
+        }
     }
 }

@@ -1,0 +1,26 @@
+ /* EMPIEZA PAGE DIVISIONES */
+.header-page2{
+    h2{
+    padding: 3rem 0 0 0; 
+    color: $verdeMRL;
+    }
+    .contenedor-fila-divisiones2{
+        .contenedor-columna-divisiones2{
+            font-size: 1.5rem;
+        }
+    }
+}
+.seccion1-page2{
+    .contenedor-fila-imagen-page2{
+        border: none 2px green;
+        .contenedor-col-imagen-page2{            
+            height: 10rem;
+            img{               
+                transform: scale(1.5);
+            }
+        }
+    }
+    .contenedor-fila-texto-page2{
+        font-size: 1.5rem;
+    }
+}

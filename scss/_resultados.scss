@@ -1,6 +1,7 @@
 .resultados{
     background-color: $azulMRL;
-    .contenedor-fila-resultados{       
+    .contenedor-fila-resultados{ 
+        margin: 0;      
         padding: 5rem 0 5rem 0;
         font-size: 1.5rem;
         h2{
@@ -11,10 +12,16 @@
             color: $verdeMRL;
         }
     }
-    .titulos-encabezado{
-        padding: 0 1rem 0 1rem;
+    .titulos-encabezado{        
+        padding: 0;
         color: $verdeMRL; 
         font-size: 1.5rem;
+    }
+    .tabla-elite{
+        padding: 0;
+    }
+    .tabla-clasea{
+        padding: 0;
     }
     .encabezado-tabla{
         font-size: 1.3rem;
@@ -35,17 +42,19 @@
         /* Piso el background TEAL de las tablas */       
         background-color: $azulMRL;
     }
-    .columna-estadisticas-completas{
-        padding: 5rem 0 2rem 0;
-       /*  border:$border; */
-       .boton-estadisticas-completas{
-           background-color: gray;
-           color: white;
-           border:gray;
-           height: 3rem;
-           &:hover{
-               background-color: teal;
-           }
-       }
+    .fila-estadisticas-completas{
+        border:$border;
+        .columna-estadisticas-completas{
+            padding: 5rem 0 2rem 0;      
+        .boton-estadisticas-completas{
+            background-color: gray;
+            color: white;
+            border:gray;
+            height: 3rem;
+            &:hover{
+                background-color: teal;
+            }
+        }
+        }
     }
 }

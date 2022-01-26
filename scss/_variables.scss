@@ -1,7 +1,9 @@
 $verdeMRL: #9df175;
 $azulMRL: #011627; 
 $rojoMRL: #dc143c;    
-$border: solid 3px $rojoMRL;
+$border: none 3px pink;
+
+$anchoImagen: 30%;
 
 /* APLICACION DEL MIXIN */
 @mixin sangria-secciones-vertical {

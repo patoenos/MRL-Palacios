@@ -1,5 +1,9 @@
+.contenedor-fila-video{
+    border: $border;      /* borrar despues */  
+    margin: 0;
     .contenedor-columna-video{               
         border:none;
         background-color: $azulMRL;       
         margin: 0;                       
     }   
+}
